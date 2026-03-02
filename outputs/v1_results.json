@@ -1,0 +1,287 @@
+{
+  "version": "v1_zero_shot",
+  "timestamp": "2026-03-02T14:14:10.186653",
+  "model": "llama3.1:8b",
+  "summaries": [
+    {
+      "prompt_name": "PROMPT_A_minimal",
+      "n_emails": 5,
+      "valid_json": "5/5",
+      "all_fields": "5/5",
+      "urgency_valid": "5/5",
+      "overall_pct": 100.0,
+      "parse_failures": []
+    },
+    {
+      "prompt_name": "PROMPT_B_with_role",
+      "n_emails": 5,
+      "valid_json": "5/5",
+      "all_fields": "5/5",
+      "urgency_valid": "5/5",
+      "overall_pct": 100.0,
+      "parse_failures": []
+    },
+    {
+      "prompt_name": "PROMPT_C_ultra_bare",
+      "n_emails": 5,
+      "valid_json": "5/5",
+      "all_fields": "0/5",
+      "urgency_valid": "0/5",
+      "overall_pct": 33.3,
+      "parse_failures": []
+    }
+  ],
+  "results": [
+    {
+      "email_id": 1,
+      "prompt_name": "PROMPT_A_minimal",
+      "raw_output": "```\n{\n  \"customer_issue\": \"defective product\",\n  \"product\": \"UltraBoost X shoes\",\n  \"order_number\": \"84521\",\n  \"urgency\": \"high\",\n  \"action_needed\": \"replacement\"\n}\n```",
+      "parsed": {
+        "customer_issue": "defective product",
+        "product": "UltraBoost X shoes",
+        "order_number": "84521",
+        "urgency": "high",
+        "action_needed": "replacement"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 2,
+      "prompt_name": "PROMPT_A_minimal",
+      "raw_output": "```\n{\n  \"customer_issue\": \"refund not processed\",\n  \"product\": \"blue jacket\",\n  \"order_number\": \"77203\",\n  \"urgency\": \"low\",\n  \"action_needed\": \"process refund\"\n}\n```",
+      "parsed": {
+        "customer_issue": "refund not processed",
+        "product": "blue jacket",
+        "order_number": "77203",
+        "urgency": "low",
+        "action_needed": "process refund"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 3,
+      "prompt_name": "PROMPT_A_minimal",
+      "raw_output": "```\n{\n    \"customer_issue\": \"Missing package\",\n    \"product\": null,\n    \"order_number\": \"99012\",\n    \"urgency\": \"high\",\n    \"action_needed\": \"Refund or dispute\"\n}\n```",
+      "parsed": {
+        "customer_issue": "Missing package",
+        "product": null,
+        "order_number": "99012",
+        "urgency": "high",
+        "action_needed": "Refund or dispute"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 4,
+      "prompt_name": "PROMPT_A_minimal",
+      "raw_output": "```\n{\n  \"customer_issue\": \"Gift suggestion\",\n  \"product\": null,\n  \"order_number\": null,\n  \"urgency\": \"low\",\n  \"action_needed\": \"Recommend gardening product under $50\"\n}\n```",
+      "parsed": {
+        "customer_issue": "Gift suggestion",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "Recommend gardening product under $50"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 5,
+      "prompt_name": "PROMPT_A_minimal",
+      "raw_output": "```\n{\n  \"customer_issue\": \"password reset email not received\",\n  \"product\": null,\n  \"order_number\": null,\n  \"urgency\": \"low\",\n  \"action_needed\": \"fix password reset email\"\n}\n```",
+      "parsed": {
+        "customer_issue": "password reset email not received",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "fix password reset email"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 1,
+      "prompt_name": "PROMPT_B_with_role",
+      "raw_output": "{\n  \"customer_issue\": \"defective product\",\n  \"product\": \"UltraBoost X shoes\",\n  \"order_number\": \"84521\",\n  \"urgency\": \"high\",\n  \"action_needed\": \"replacement\"\n}",
+      "parsed": {
+        "customer_issue": "defective product",
+        "product": "UltraBoost X shoes",
+        "order_number": "84521",
+        "urgency": "high",
+        "action_needed": "replacement"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 2,
+      "prompt_name": "PROMPT_B_with_role",
+      "raw_output": "{\n  \"customer_issue\": \"refund not processed\",\n  \"product\": null,\n  \"order_number\": \"77203\",\n  \"urgency\": \"low\",\n  \"action_needed\": \"process refund\"\n}",
+      "parsed": {
+        "customer_issue": "refund not processed",
+        "product": null,
+        "order_number": "77203",
+        "urgency": "low",
+        "action_needed": "process refund"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 3,
+      "prompt_name": "PROMPT_B_with_role",
+      "raw_output": "{\n  \"customer_issue\": \"Missing package\",\n  \"product\": null,\n  \"order_number\": \"99012\",\n  \"urgency\": \"high\",\n  \"action_needed\": \"refund or dispute\"\n}",
+      "parsed": {
+        "customer_issue": "Missing package",
+        "product": null,
+        "order_number": "99012",
+        "urgency": "high",
+        "action_needed": "refund or dispute"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 4,
+      "prompt_name": "PROMPT_B_with_role",
+      "raw_output": "{\n  \"customer_issue\": \"gift suggestion\",\n  \"product\": null,\n  \"order_number\": null,\n  \"urgency\": \"low\",\n  \"action_needed\": \"suggest a product within budget\"\n}",
+      "parsed": {
+        "customer_issue": "gift suggestion",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "suggest a product within budget"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 5,
+      "prompt_name": "PROMPT_B_with_role",
+      "raw_output": "{\n  \"customer_issue\": \"password reset email not received\",\n  \"product\": null,\n  \"order_number\": null,\n  \"urgency\": \"low\",\n  \"action_needed\": \"fix password reset email\"\n}",
+      "parsed": {
+        "customer_issue": "password reset email not received",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "fix password reset email"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 1,
+      "prompt_name": "PROMPT_C_ultra_bare",
+      "raw_output": "Here is the extracted data in JSON format:\n\n```\n{\n  \"order_number\": \"84521\",\n  \"issue_description\": \"Left shoe sole is coming apart\",\n  \"customer_emotion\": \"frustrating\"\n}\n```",
+      "parsed": {
+        "order_number": "84521",
+        "issue_description": "Left shoe sole is coming apart",
+        "customer_emotion": "frustrating"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 0,
+      "urgency_valid": 0,
+      "total_score": 1
+    },
+    {
+      "email_id": 2,
+      "prompt_name": "PROMPT_C_ultra_bare",
+      "raw_output": "Here is the extracted data in JSON format:\n\n```\n{\n  \"order_number\": \"77203\",\n  \"refund_status\": \"pending\"\n}\n```\n\nNote: The email does not explicitly mention a refund status, but based on the context it can be inferred that the refund is pending. If you want to represent this as an unknown or uncertain state, you could use a more neutral value for `refund_status`, such as `\"unknown\"` or `\"in_progress\"`.",
+      "parsed": {
+        "order_number": "77203",
+        "refund_status": "pending"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 0,
+      "urgency_valid": 0,
+      "total_score": 1
+    },
+    {
+      "email_id": 3,
+      "prompt_name": "PROMPT_C_ultra_bare",
+      "raw_output": "Here is the extracted data in JSON format:\n\n```\n{\n  \"order_number\": \"99012\",\n  \"issue_description\": \"Package never arrived\",\n  \"waiting_time\": \"3 weeks\",\n  \"customer_request\": \"Refund of money immediately\"\n}\n```",
+      "parsed": {
+        "order_number": "99012",
+        "issue_description": "Package never arrived",
+        "waiting_time": "3 weeks",
+        "customer_request": "Refund of money immediately"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 0,
+      "urgency_valid": 0,
+      "total_score": 1
+    },
+    {
+      "email_id": 4,
+      "prompt_name": "PROMPT_C_ultra_bare",
+      "raw_output": "Here is the extracted data in JSON format:\n\n```\n{\n  \"request\": {\n    \"type\": \"gift\",\n    \"recipient\": \"mom\"\n  },\n  \"preferences\": {\n    \"interests\": [\"gardening\"],\n    \"budget\": \"$50\"\n  }\n}\n```",
+      "parsed": {
+        "request": {
+          "type": "gift",
+          "recipient": "mom"
+        },
+        "preferences": {
+          "interests": [
+            "gardening"
+          ],
+          "budget": "$50"
+        }
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 0,
+      "urgency_valid": 0,
+      "total_score": 1
+    },
+    {
+      "email_id": 5,
+      "prompt_name": "PROMPT_C_ultra_bare",
+      "raw_output": "Here is the extracted data in JSON format:\n\n```\n{\n  \"email\": \"jane@example.com\",\n  \"urgency\": \"not super urgent\"\n}\n```",
+      "parsed": {
+        "email": "jane@example.com",
+        "urgency": "not super urgent"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 0,
+      "urgency_valid": 0,
+      "total_score": 1
+    }
+  ]
+}

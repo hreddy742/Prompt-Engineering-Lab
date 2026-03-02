@@ -1,0 +1,291 @@
+{
+  "version": "v2_few_shot",
+  "timestamp": "2026-03-02T14:56:05.273150",
+  "model": "llama3.1:8b",
+  "summaries": [
+    {
+      "prompt_name": "PROMPT_B_v1_best",
+      "n_emails": 5,
+      "valid_json": "5/5",
+      "all_fields": "5/5",
+      "urgency_valid": "5/5",
+      "overall_pct": 100.0,
+      "parse_failures": []
+    },
+    {
+      "prompt_name": "PROMPT_D_few_shot",
+      "n_emails": 5,
+      "valid_json": "5/5",
+      "all_fields": "5/5",
+      "urgency_valid": "5/5",
+      "overall_pct": 100.0,
+      "parse_failures": []
+    },
+    {
+      "prompt_name": "PROMPT_E_cot",
+      "n_emails": 5,
+      "valid_json": "5/5",
+      "all_fields": "5/5",
+      "urgency_valid": "5/5",
+      "overall_pct": 100.0,
+      "parse_failures": []
+    }
+  ],
+  "results": [
+    {
+      "email_id": 1,
+      "prompt_name": "PROMPT_B_v1_best",
+      "raw_output": "{\n  \"customer_issue\": \"defective product\",\n  \"product\": \"UltraBoost X shoes\",\n  \"order_number\": \"84521\",\n  \"urgency\": \"high\",\n  \"action_needed\": \"replacement\"\n}",
+      "parsed": {
+        "customer_issue": "defective product",
+        "product": "UltraBoost X shoes",
+        "order_number": "84521",
+        "urgency": "high",
+        "action_needed": "replacement"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 2,
+      "prompt_name": "PROMPT_B_v1_best",
+      "raw_output": "{\n  \"customer_issue\": \"refund not processed\",\n  \"product\": null,\n  \"order_number\": \"77203\",\n  \"urgency\": \"low\",\n  \"action_needed\": \"process refund\"\n}",
+      "parsed": {
+        "customer_issue": "refund not processed",
+        "product": null,
+        "order_number": "77203",
+        "urgency": "low",
+        "action_needed": "process refund"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 3,
+      "prompt_name": "PROMPT_B_v1_best",
+      "raw_output": "{\n  \"customer_issue\": \"Package never arrived\",\n  \"product\": null,\n  \"order_number\": \"99012\",\n  \"urgency\": \"high\",\n  \"action_needed\": \"refund or dispute\"\n}",
+      "parsed": {
+        "customer_issue": "Package never arrived",
+        "product": null,
+        "order_number": "99012",
+        "urgency": "high",
+        "action_needed": "refund or dispute"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 4,
+      "prompt_name": "PROMPT_B_v1_best",
+      "raw_output": "{\n  \"customer_issue\": \"gift suggestion\",\n  \"product\": null,\n  \"order_number\": null,\n  \"urgency\": \"low\",\n  \"action_needed\": \"suggest a product within budget\"\n}",
+      "parsed": {
+        "customer_issue": "gift suggestion",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "suggest a product within budget"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 5,
+      "prompt_name": "PROMPT_B_v1_best",
+      "raw_output": "{\n  \"customer_issue\": \"password reset email not received\",\n  \"product\": null,\n  \"order_number\": null,\n  \"urgency\": \"low\",\n  \"action_needed\": \"fix password reset email\"\n}",
+      "parsed": {
+        "customer_issue": "password reset email not received",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "fix password reset email"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 1,
+      "prompt_name": "PROMPT_D_few_shot",
+      "raw_output": "{\"customer_issue\": \"defective product\", \"product\": \"UltraBoost X shoes\", \"order_number\": \"84521\", \"urgency\": \"high\", \"action_needed\": \"replacement\"}",
+      "parsed": {
+        "customer_issue": "defective product",
+        "product": "UltraBoost X shoes",
+        "order_number": "84521",
+        "urgency": "high",
+        "action_needed": "replacement"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 2,
+      "prompt_name": "PROMPT_D_few_shot",
+      "raw_output": "{\"customer_issue\": \"refund status inquiry\", \"product\": \"blue jacket\", \"order_number\": \"77203\", \"urgency\": \"low\", \"action_needed\": \"check refund status\"}",
+      "parsed": {
+        "customer_issue": "refund status inquiry",
+        "product": "blue jacket",
+        "order_number": "77203",
+        "urgency": "low",
+        "action_needed": "check refund status"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 3,
+      "prompt_name": "PROMPT_D_few_shot",
+      "raw_output": "{\"customer_issue\": \"missing package\", \"product\": null, \"order_number\": \"99012\", \"urgency\": \"high\", \"action_needed\": \"refund\"}",
+      "parsed": {
+        "customer_issue": "missing package",
+        "product": null,
+        "order_number": "99012",
+        "urgency": "high",
+        "action_needed": "refund"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 4,
+      "prompt_name": "PROMPT_D_few_shot",
+      "raw_output": "{\"customer_issue\": \"product recommendation\", \"product\": null, \"order_number\": null, \"urgency\": \"low\", \"action_needed\": \"gift suggestion\"}",
+      "parsed": {
+        "customer_issue": "product recommendation",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "gift suggestion"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 5,
+      "prompt_name": "PROMPT_D_few_shot",
+      "raw_output": "{\"customer_issue\": \"password reset issue\", \"product\": null, \"order_number\": null, \"urgency\": \"medium\", \"action_needed\": \"fix password reset email\"}",
+      "parsed": {
+        "customer_issue": "password reset issue",
+        "product": null,
+        "order_number": null,
+        "urgency": "medium",
+        "action_needed": "fix password reset email"
+      },
+      "parse_status": "clean_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 1,
+      "prompt_name": "PROMPT_E_cot",
+      "raw_output": "Let's go through the steps:\n\n**STEP 1 - Read the email carefully**\n\nThe customer mentions that they bought the UltraBoost X shoes last week and the left shoe sole is coming apart already. They express frustration and need a replacement ASAP.\n\n**STEP 2 - Identify: is there a product? an order number? how urgent is this?**\n\n* Product: Yes, the product mentioned is \"UltraBoost X shoes\".\n* Order Number: Yes, the order number is #84521.\n* Urgency: The customer uses words like \"already\", \"coming apart\", and \"ASAP\" which indicate a high level of urgency.\n\n**STEP 3 - Decide urgency**\n\nBased on the language used by the customer, I would classify this as **high** urgency. They are frustrated and need a replacement quickly.\n\n**STEP 4 - Write the JSON output**\n\n{\"customer_issue\": \"defective sole\", \"product\": \"UltraBoost X shoes\", \"order_number\": \"84521\", \"urgency\": \"high\", \"action_needed\": \"replacement\"}",
+      "parsed": {
+        "customer_issue": "defective sole",
+        "product": "UltraBoost X shoes",
+        "order_number": "84521",
+        "urgency": "high",
+        "action_needed": "replacement"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 2,
+      "prompt_name": "PROMPT_E_cot",
+      "raw_output": "Let's go through the steps:\n\n**STEP 1 - Read the email carefully**\n\nThe customer is checking if their refund for order 77203 has been processed. They mention that they returned the blue jacket 2 weeks ago and still haven't seen anything in their account.\n\n**STEP 2 - Identify: is there a product? an order number? how urgent is this?**\n\n* Product: Yes, it's a \"blue jacket\".\n* Order Number: Yes, it's order 77203.\n* Urgency: The customer mentions that it's not urgent, they just want to know the status of their refund.\n\n**STEP 3 - Decide urgency: high = angry/ASAP/threatening, medium = wants resolution, low = just asking**\n\nBased on the email, I would classify this as \"low\" urgency. The customer is not being aggressive or demanding an immediate response; they're simply inquiring about the status of their refund.\n\n**STEP 4 - Write the JSON output**\n\n{\"customer_issue\": \"refund status inquiry\", \"product\": \"blue jacket\", \"order_number\": \"77203\", \"urgency\": \"low\", \"action_needed\": \"check refund status\"}",
+      "parsed": {
+        "customer_issue": "refund status inquiry",
+        "product": "blue jacket",
+        "order_number": "77203",
+        "urgency": "low",
+        "action_needed": "check refund status"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 3,
+      "prompt_name": "PROMPT_E_cot",
+      "raw_output": "Let's go through the steps:\n\n**STEP 1 - Read the email carefully**\n\nThe customer is extremely upset and mentions that they have been waiting for 3 weeks for a package that never arrived. They mention an order number (99012) and specifically state that they want their money back immediately.\n\n**STEP 2 - Identify: is there a product? an order number? how urgent is this?**\n\n* Product: The email doesn't explicitly mention the product name, but it's likely related to the missing package.\n* Order Number: Yes, the customer mentions order #99012.\n* Urgency: This is extremely urgent. The customer uses strong language (\"WORST EXPERIENCE EVER\") and threatens to dispute with their bank if they don't get a refund.\n\n**STEP 3 - Decide urgency**\n\nBased on the customer's tone and language, I would classify this as \"high\" urgency.\n\n**STEP 4 - Write the JSON output**\n\n{\"customer_issue\": \"missing package\", \"product\": null, \"order_number\": \"99012\", \"urgency\": \"high\", \"action_needed\": \"refund\"}",
+      "parsed": {
+        "customer_issue": "missing package",
+        "product": null,
+        "order_number": "99012",
+        "urgency": "high",
+        "action_needed": "refund"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 4,
+      "prompt_name": "PROMPT_E_cot",
+      "raw_output": "Let's go through the steps:\n\n**STEP 1 - Read the email carefully**\n\nThe customer is asking for help finding a gift for their mom who likes gardening. They mention a budget of around $50 and haven't placed an order yet.\n\n**STEP 2 - Identify: is there a product? an order number? how urgent is this?**\n\nThere is no specific product mentioned, but the customer mentions that their mom likes gardening, which could imply they're looking for a gardening-related gift. There is no order number mentioned. The urgency of this issue seems to be low, as the customer is just browsing and hasn't placed an order yet.\n\n**STEP 3 - Decide urgency: high = angry/ASAP/threatening, medium = wants resolution, low = just asking**\n\nBased on the email, I would classify the urgency as \"low\". The customer is simply asking for help finding a gift and doesn't seem to be in a hurry or upset about anything.\n\n**STEP 4 - Write the JSON output**\n\n{\"customer_issue\": \"gift recommendation\", \"product\": null, \"order_number\": null, \"urgency\": \"low\", \"action_needed\": \"recommend gardening-related gift\"}",
+      "parsed": {
+        "customer_issue": "gift recommendation",
+        "product": null,
+        "order_number": null,
+        "urgency": "low",
+        "action_needed": "recommend gardening-related gift"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    },
+    {
+      "email_id": 5,
+      "prompt_name": "PROMPT_E_cot",
+      "raw_output": "Let's go through the steps:\n\n**STEP 1 - Read the email carefully**\n\nThe customer is having an issue with their password reset email not coming through. They mention that they want to fix it today, but also say \"not super urgent\".\n\n**STEP 2 - Identify: is there a product? an order number? how urgent is this?**\n\nThere is no mention of a specific product or order number in the email.\n\n**STEP 3 - Decide urgency**\n\nThe customer mentions that it's not \"super urgent\", which suggests a medium level of urgency. They want to fix it today, but don't seem to be in a state of panic or threatening consequences if it's not resolved immediately.\n\n**JSON Output:**\n{\n  \"customer_issue\": \"password reset email issue\",\n  \"product\": null,\n  \"order_number\": null,\n  \"urgency\": \"medium\",\n  \"action_needed\": \"fix password reset email\"\n}",
+      "parsed": {
+        "customer_issue": "password reset email issue",
+        "product": null,
+        "order_number": null,
+        "urgency": "medium",
+        "action_needed": "fix password reset email"
+      },
+      "parse_status": "extracted_json",
+      "format_ok": 1,
+      "has_all_fields": 1,
+      "urgency_valid": 1,
+      "total_score": 3
+    }
+  ]
+}

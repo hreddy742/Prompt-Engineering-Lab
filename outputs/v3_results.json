@@ -1,0 +1,57 @@
+{
+  "version": "v3_structured_output",
+  "timestamp": "2026-03-02T16:42:46.641788",
+  "model": "llama3.1:8b",
+  "results": [
+    {
+      "email_id": 1,
+      "success": true,
+      "customer_issue": "defective product",
+      "product": "UltraBoost X shoes",
+      "order_number": "#84521",
+      "urgency": "high",
+      "action_needed": "replacement",
+      "error": null
+    },
+    {
+      "email_id": 2,
+      "success": true,
+      "customer_issue": "refund inquiry",
+      "product": "blue jacket",
+      "order_number": "77203",
+      "urgency": "low",
+      "action_needed": "verify refund status",
+      "error": null
+    },
+    {
+      "email_id": 3,
+      "success": true,
+      "customer_issue": "Package never arrived",
+      "product": null,
+      "order_number": "99012",
+      "urgency": "high",
+      "action_needed": "refund",
+      "error": null
+    },
+    {
+      "email_id": 4,
+      "success": true,
+      "customer_issue": "Gift suggestion",
+      "product": "Gardening related",
+      "order_number": "None",
+      "urgency": "low",
+      "action_needed": "Recommendation",
+      "error": null
+    },
+    {
+      "email_id": 5,
+      "success": true,
+      "customer_issue": "password reset email not received",
+      "product": null,
+      "order_number": null,
+      "urgency": "low",
+      "action_needed": "resend password reset email",
+      "error": null
+    }
+  ]
+}
