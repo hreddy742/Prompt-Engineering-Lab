@@ -4,5 +4,6 @@ langchain_core
 python-dotenv
 rich
 pydantic
+streamlit
 
 

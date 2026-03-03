@@ -1,0 +1,23 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Outputs
+outputs/
+
+# SSH junk folder accidentally created
+.git-ssh/
+Set-Service*
