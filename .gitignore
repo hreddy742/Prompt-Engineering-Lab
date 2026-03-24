@@ -17,6 +17,8 @@ Thumbs.db
 
 # Outputs
 outputs/
+.codex-run/
+.codex-tmp/
 
 # SSH junk folder accidentally created
 .git-ssh/
